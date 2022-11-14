@@ -1,7 +1,7 @@
 
 
-add1 = int(input("Enter first value : "))
-add2 = int(input("enter second value : "))
+add1 = int(input("Enter first value :"))
+add2 = int(input("enter second value :"))
 
 
 
