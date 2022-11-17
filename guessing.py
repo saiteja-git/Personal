@@ -1,18 +1,10 @@
-import random
-count = 1
-rand_val = random.randint(1, 5)
-while count:
-    user_input = int(input("Enter any value: "))
+user_input = str(input("Enter any word : "))
 
-    if rand_val > user_input:
-         print(f"You entereed the greater value {user_input}")
-    elif rand_val < user_input:
-         print(f"You entered the lesser value {user_input}")
-    elif user_input == rand_val:
-         print(f"Congratulations you entered the correct value {user_input}")
-         count = 0
+def pali(user_input):
+
+    if user_input == user_input[::-1]:
+        print("It is a palindrome")
     else:
-        print("raise value error")
-     
-            
+        print("It is not a palindrome")
 
+pali(user_input)

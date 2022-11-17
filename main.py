@@ -1,12 +1,20 @@
+class Student:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age =  age
+
+    def print_name(self):
+        return f"the name {self.name} and {self.age}"
+
+    classmethod
+    def new_obj(cls, name, location):
+        add
+
+Obj1 = Student("Saiteja", 26)
+print(obj1.name)
+print(obj1.age)
+print(obj1.print_name())
 
 
-add1 = int(input("Enter first value :"))
-add2 = int(input("enter second value :"))
 
-
-
-def add_fun (add1, add2):
-
-    return add1 + add2
-
-print(add_fun(add1, add2)) 
