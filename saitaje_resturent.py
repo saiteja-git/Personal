@@ -14,6 +14,7 @@ class Saiteja_Rest(Restaurent):
         self.food = food
 
     def booking(self, coustomer_requirement):
+        """This funtion is for booking Table"""
         try:
             var = self.check_availability() - coustomer_requirement
             return var
@@ -21,6 +22,8 @@ class Saiteja_Rest(Restaurent):
             return f"Sorry the avalabily of Table is Zero"
     
     def order_food(self, order_food):
+        """This function is for 
+        order_food for the customer"""
         accept_order = []
         for i in range(len(order_food)):
             for k in range(len(lst_menu)):
@@ -29,6 +32,8 @@ class Saiteja_Rest(Restaurent):
         return ",".join(([i for i in set(accept_order)]))
 
     def order_status(self, booking, order_food):
+        """This function is to get the stats
+        of the Table and food avalbility"""
         table, order_s = self.booking(booking), self.order_food(order_food)
         if isinstance(self.booking(booking), int) and isinstance(self.order_food(order_food), str):
             if table <= -1:
