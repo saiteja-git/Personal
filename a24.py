@@ -1,10 +1,10 @@
-
-# Faulty calculator
-
 while True:
 
-    user = input("What operation you want ? Please select in symbols - add(+), sub(-), mul(*), div(/), exit(q) :- ")
+    def dummy_calculator(a,b,operation):
 
+        return a,b,operation
+
+    user = input("What operation you want ? Please select in symbols - add(+), sub(-), mul(*), div(/), exit(q) :- ")
 
     if user == '+':
         a_add = int(input("Enter first number to add: "))
@@ -31,19 +31,5 @@ while True:
         division_result = div_total * b_div
         print(f"Division result: {division_result}")
     if user == 'q':
-        print(f'Terminating')
+        print(f'Terminating!')
         break
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
